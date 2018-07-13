@@ -24,20 +24,18 @@ class ViewController: UIViewController {
 
 
     @IBAction func calculoImc(_ sender: Any) {
-        if(alturaField == nil && pesoField == nil) {
-            return
-        }
         calculeImc()
-        
-        
     }
     
     func calculeImc() {
-        let altura = Double(alturaField.text!)
+         let altura = Double(alturaField.text!)
         let peso = Double(pesoField.text!)
         var imc : Double
        
-        if(alturaField.text == "" && pesoField.text == "") {
+        if(altura == nil && peso == nil) {
+            let alertView = UIAlertController(title: "Dados Inválidos", message: "Verifique se digitou peso e a altura corretamente", preferredStyle: .alert)
+            self.present(alertView,  animated: true)
+            alertView.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
             return
         }
     
