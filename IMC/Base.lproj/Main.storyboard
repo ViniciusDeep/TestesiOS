@@ -142,7 +142,9 @@
                     </view>
                     <connections>
                         <outlet property="alturaField" destination="gd0-19-rmY" id="61D-Nc-BJO"/>
+                        <outlet property="imageResult" destination="toh-40-rsT" id="48X-EI-O7G"/>
                         <outlet property="pesoField" destination="id6-ce-IHo" id="Oh9-xI-nRI"/>
+                        <outlet property="result" destination="1p1-8b-FIi" id="AMm-G0-Ilb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
