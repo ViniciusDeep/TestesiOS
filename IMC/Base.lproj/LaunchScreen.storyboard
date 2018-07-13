@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="lLa-qq-BXI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="lLa-qq-BXI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lLa-qq-BXI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1bZ-hW-Fwb"/>
+                            <constraint firstItem="lLa-qq-BXI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EEf-OF-6vS"/>
+                            <constraint firstItem="lLa-qq-BXI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NwM-Pv-dsg"/>
+                            <constraint firstItem="lLa-qq-BXI" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="yX2-j6-pGV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
