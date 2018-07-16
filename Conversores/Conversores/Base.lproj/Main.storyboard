@@ -73,8 +73,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.31764705879999999" green="0.69411764710000001" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqM-sc-GW5">
-                                <rect key="frame" x="50" y="376" width="326" height="94"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="uqM-sc-GW5">
+                                <rect key="frame" x="20" y="376" width="374" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <color key="textColor" red="0.33333333329999998" green="0.69411764710000001" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
