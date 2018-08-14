@@ -10,16 +10,55 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var tfTerno: UITextField!
+    @IBOutlet weak var tfVestido: UITextField!
+    @IBOutlet weak var tfResult: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+   
+    @IBAction func calcButton(_ sender: Any) {
+        var x1 = 7
+        var x2 = 2
+        guard let pTernos = tfTerno else{return}
+        guard let pVestido = tfVestido else{return}
+        var ternoI = Int(pTernos.text!)
+        var vestidoI = Int(pVestido.text!)
+        
+        if ternoI == nil{
+            return
+        }
+        if vestidoI == nil{
+            return
+        }
+        
+        
+        
+        
+        funcaoObjetivo(x1: x1, x2: x2, pTerno: ternoI!, pVestido: vestidoI!)
+        
     }
-
-
+    
+    
+    func funcaoObjetivo(x1: Int, x2: Int, pTerno: Int, pVestido: Int) {
+        var resultado: Int
+        resultado = (pTerno * x1) + (pVestido * x2)
+        tfResult.text = String(resultado)
+    }
+    
+//    func restricoes(x1: Int, x2: Int) {
+//        let at = 2
+//        
+//        for _ in 1...16 {
+//            if at * 2 < 16 {
+//                x1 = x1 + 1
+//                x2 = 2
+//            }
+//        }
+//    }
+    
 }
 
