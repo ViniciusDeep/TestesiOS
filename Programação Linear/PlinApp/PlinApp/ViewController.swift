@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     
     
@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tfTerno.delegate = self
     }
    
     @IBAction func calcButton(_ sender: Any) {
@@ -34,8 +35,6 @@ class ViewController: UIViewController {
         if vestidoI == nil{
             return
         }
-        
-        
         
         
         funcaoObjetivo(x1: x1, x2: x2, pTerno: ternoI!, pVestido: vestidoI!)
@@ -59,6 +58,14 @@ class ViewController: UIViewController {
 //            }
 //        }
 //    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("dismiss")
+        tfTerno.resignFirstResponder()
+        tfVestido.resignFirstResponder()
+    }
+    
+  
     
 }
 
